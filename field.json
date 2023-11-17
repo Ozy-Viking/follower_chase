@@ -1,0 +1,72 @@
+{
+    "followerGoalTitle": {
+        "group": "Appearance",
+        "type": "text",
+        "label": "Follower Goal Title",
+        "value": "Follower Goal: "
+    },
+    "followerGoalDifference": {
+        "group": "Appearance",
+        "type": "text",
+        "label": "Follower Goal Difference",
+        "step": 1,
+        "min": 1,
+        "value": 1
+    },
+    "googleFont": {
+        "group": "Appearance",
+        "type": "googleFont",
+        "label": "Choose a font from Google",
+        "value": "Open Sans"
+    },
+    "customFont": {
+        "group": "Appearance",
+        "type": "text",
+        "label": "Custom Font (leave empty to ignore)",
+        "value": "Tw Cen MT Std"
+    },
+    "fontSize": {
+        "group": "Appearance",
+        "type": "number",
+        "label": "Font Size",
+        "step": 1,
+        "value": 24
+    },
+    "fontWeight": {
+        "group": "Appearance",
+        "label": "Font Weight",
+        "type": "dropdown",
+        "value": "400",
+        "options": {
+            "100": "Thin (100)",
+            "300": "Light (300)",
+            "400": "Regular (400)",
+            "500": "Medium (500)",
+            "700": "Bold (700)",
+            "900": "Black (900)"
+        }
+    },
+    "fontColor": {
+        "group": "Appearance",
+        "type": "colorpicker",
+        "label": "Font Color",
+        "value": "rgba(255,255,255,1)"
+    },
+    "textShadow": {
+        "group": "Appearance",
+        "type": "text",
+        "label": "Text Shadow",
+        "value": "rgb(0, 0, 0) 1px 1px 1px"
+    },
+    "textAlign": {
+        "group": "Appearance",
+        "type": "dropdown",
+        "label": "Text Align",
+        "value": "center",
+        "options": {
+            "left": "Left",
+            "center": "Center",
+            "right": "Right"
+        }
+    }
+}

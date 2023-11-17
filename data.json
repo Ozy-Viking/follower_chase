@@ -1,0 +1,11 @@
+{
+    "googleFont": "Open Sans",
+    "customFont": "",
+    "fontSize": 28,
+    "fontWeight": "700",
+    "fontColor": "rgba(255,255,255,1)",
+    "textShadow": "rgb(0, 0, 0) 1px 1px 1px",
+    "subGoalDifference": "1",
+    "textAlign": "center",
+    "subGoalTitle": "SUB GOAL:"
+}
