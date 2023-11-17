@@ -36,8 +36,6 @@ function UpdateFollowerGoal() {
     followerGoalCountSpan.innerHTML = parseInt(currentFollowerCount) + parseInt(followerGoalDifference);
 }
 
-
-
 //////////////////////
 // HELPER FUNCTIONS //
 //////////////////////
@@ -61,8 +59,6 @@ String.prototype.toHHMMSS = function () {
 function IsNullOrWhitespace(str) {
     return /^\s*$/.test(str);
 }
-
-
 
 ///////////////////////////
 // STREAMELEMENTS EVENTS //
