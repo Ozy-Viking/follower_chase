@@ -18,8 +18,8 @@ div#mainContainer {
     font-weight: 800; /* {{ fontWeight }};/* */
     color: black; /* {{ fontColor }};/* */
     line-height: 0.8; /* {{ fontSize }};/* */
-    flex-direction: column; /* {{ titleOption }};/*: row or column */
-    align-items: center; /* {{ secondLineOption }};/*: flex-start, center, flex-end or stretch */
+    flex-direction: column; /* {{ titleOption }};/* row or column */
+    align-items: center; /* {{ secondLineOption }};/* flex-start, center, flex-end or stretch */
 	font-style: normal; /* {{ italics }}; /* normal or italic */
 }
 
