@@ -1,15 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family={{googleFont}}:100,200,300,400,500,600,700,800,900');
+@import url("https://fonts.googleapis.com/css?family={{googleFont}}:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.cdnfonts.com/css/tw-cen-mt-std");
 
-* {
+body {
+    display: flex;
+    flex-wrap: wrap;
 	margin: 0;
-	padding: 0;
+	overflow: hidden;
+
+    justify-content: center; /* {{ justifyContent }}; /*Horizontal: flex-start, center, flex-end */
+    align-content: center; /* {{ verticalAlign }}; /* Vertical: flex-start, center, flex-end */
 }
 
-#mainContainer {
-	font-size: {{fontSize}}px;
-	font-weight: {{fontWeight}};
-	color: {{fontColor}};
-	text-shadow: {{textShadow}};
-  	text-align: {{textAlign}};
+div#mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+	font-size: 100px; /* {{ fontSize }}px;/* */
+    font-weight: 800; /* {{ fontWeight }};/* */
+    color: black; /* {{ fontColor }};/* */
+    line-height: 0.8; /* {{ fontSize }};/* */
+    flex-direction: column; /* {{ titleOption }};/*: row or column */
+    align-items: center; /* {{ secondLineOption }};/*: flex-start, center, flex-end or stretch */
+	font-style: normal; /* {{ italics }}; /* normal or italic */
+}
+
+
+.followers {
+    letter-spacing: -0.1rem; /*{{letterSpacing}}rem; /* */
 }

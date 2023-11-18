@@ -2,16 +2,16 @@
 // STREAMELEMENTS FIELDS //
 ///////////////////////////
 
-let followerGoalTitle = "";
+let followerGoalTitle = "Follower Goal";
 let followerGoalDifference = 1;
 let googleFont = "Open Sans";
-let customFont = "";
+let customFont = "tw cen mt std";
 
 /////////////////
 // GLOBAL VARS //
 /////////////////
 
-let currentFollowerCount = 0;
+let currentFollowerCount = 4087;
 
 
 ////////////////////
@@ -36,6 +36,9 @@ function UpdateFollowerGoal() {
     followerGoalCountSpan.innerHTML = parseInt(currentFollowerCount) + parseInt(followerGoalDifference);
 }
 
+
+LoadWidget()
+UpdateFollowerGoal()
 //////////////////////
 // HELPER FUNCTIONS //
 //////////////////////
@@ -60,31 +63,33 @@ function IsNullOrWhitespace(str) {
     return /^\s*$/.test(str);
 }
 
+
+
 ///////////////////////////
 // STREAMELEMENTS EVENTS //
 ///////////////////////////
 
-window.addEventListener('onWidgetLoad', function (event) {
-    console.log('onWidgetLoad', event);
-    const fieldData = event.detail.fieldData;
-    followerGoalTitle = fieldData.followerGoalTitle;
-    followerGoalDifference = fieldData.followerGoalDifference;
-    googleFont = fieldData.googleFont;
-    customFont = fieldData.customFont;
+// window.addEventListener('onWidgetLoad', function (event) {
+//     console.log('onWidgetLoad', event);
+//     const fieldData = event.detail.fieldData;
+//     followerGoalTitle = fieldData.followerGoalTitle;
+//     followerGoalDifference = fieldData.followerGoalDifference;
+//     googleFont = fieldData.googleFont;
+//     customFont = fieldData.customFont;
 
-    let data = event["detail"]["session"]["data"];
-    currentFollowerCount = data["follower-total"]["count"];
-    console.log(data)
-    LoadWidget();
-    UpdateFollowerGoal();
-});
+//     let data = event["detail"]["session"]["data"];
+//     currentFollowerCount = data["follower-total"]["count"];
+//     console.log(data)
+//     LoadWidget();
+//     UpdateFollowerGoal();
+// });
 
-window.addEventListener('onSessionUpdate', function (event) {
-    console.log('onSessionUpdate', event.detail.session);
-    const data = event.detail.session;
+// window.addEventListener('onSessionUpdate', function (event) {
+//     console.log('onSessionUpdate', event.detail.session);
+//     const data = event.detail.session;
 
-    currentFollowerCount = data["follower-total"]["count"];
-    UpdateFollowerGoal();
+//     currentFollowerCount = data["follower-total"]["count"];
+//     UpdateFollowerGoal();
 
-    console.log(data);
-});
+//     console.log(data);
+// });
